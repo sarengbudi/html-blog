@@ -4,29 +4,69 @@
     <meta charset="UTF-8">
     <title>learn HTML </title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
 <body>
+       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="#">MyBlog</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#produck">Produck</a>
+      </li>
+            <li class="nav-item">
+        <a class="nav-link" href="#">Blog</a>
+      </li>
+            <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+    
     <div class="wraper">
-    <ul>
+    <!-- <ul>
         <li>Home</li>|
         <li>About</li>|
         <li>Produck</li>|
         <li>BLog</li>|
         <li>Contact</li>|
     </ul>
-    
+     -->    
     <h1> Welcome To My BLog</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, optio vitae vel. Aspernatur quos quae consequuntur reiciendis, accusantium minus, dignissimos dolorum quas molestiae aut accusamus, magni perferendis quod cumque blanditiis.</p>
     
     
-    <h1>ABOUT</h1>
+    <h1 id="about">ABOUT</h1>
     <img src="https://graph.facebook.com/sarengbudi/picture?hight=200" alt="myfb">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aperiam provident eius veniam eveniet veritatis et debitis. Quod magni sit provident dolorum impedit assumenda, voluptatum officiis voluptas modi. Suscipit, magni.</p>
     <br>
     <p>Cara Menemukan id Facbook</p>
     <pre>https://findmyfb.bin</pre>
     
-    <h1>Produk</h1>
+    <h1 id="produk">Produk</h1>
     <table border ="1" cellspacing="10" cellading="10"> 
     <tr>
         
@@ -74,31 +114,38 @@
     <h2>My Biker</h2>
     <img src="img/sepeda.jpg" alt="bicmy">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum qui vitae, aspernatur quaerat earum iste nemo est obcaecati possimus quis amet excepturi consectetur, id tenetur illum ad necessitatibus beatae impedit.</p>
-    <br>
+    <br><BR>
     <h1>Contact</h1>
     
        <form>
-        <p>
-          nama :
-        <input type="text"> 
-        </p>       
+        <div class="form-group">
+         <label for="nama">nama :</label>
+          <input type="text" class="form-control"> 
+           </div>
         
-        <p>
-          Email :
-        <input type="text"> 
-        </p> 
-        <p>
-          Subject :
-        <input type="text"> 
-        </p>       
-      <p>
-          Message :
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        </p>       
-
-    <button>Send</button>
+      <div class="form-group">
+         <label for="nama">email :</label>
+          <input type="text" class="form-control"> 
+           </div>
+        
+       <div class="form-group">
+         <label for="nama">subject</label>
+          <input type="text" class="form-control"> 
+           </div>
+        
+      <div class="form-group">
+         <label for="nama">message</label>
+          <textarea type="text" class="form-control"> </textarea>
+           </div>
+         <div class="form-group">
+    <button class="btn-warning">Send</button>
+           </div>
     </form>
     </div>
     <br><br><br><br>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
 </html>
+
